@@ -3,26 +3,26 @@ char linebuf[128];
 
 struct Command commands[] =
 {
-  [TIME] =
-  {
-    .command='t',
-    .handler=ptime
-  },
-  [LED] =
-  {
-    .command='l',
-    .handler=ledtrigger
-  },
-  [HALT] =
-  {
-    .command='h',
-    .handler=halt
-  },
-  [RESET] =
-  {
-    .command='r',
-    .handler=0
-  }
+	[TIME] =
+	{
+		.command='t',
+		.handler=ptime
+	},
+	[LED] =
+	{
+		.command='l',
+		.handler=ledtrigger
+	},
+	[HALT] =
+	{
+		.command='h',
+		.handler=halt
+	},
+	[RESET] =
+	{
+		.command='r',
+		.handler=0
+	}
 };
 
 #include "common.h"
